@@ -12,6 +12,11 @@ document.querySelector('.over-container').addEventListener('scroll', function ()
     }
 });
 
+
+
 window.onload = () => {
-    document.getElementById('loader').style.display = 'none';
+    setTimeout(() => {
+        document.getElementById('loader').classList.add('close-loading');
+    }, 4000);
+
 }

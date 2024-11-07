@@ -24,7 +24,9 @@ body {
 }
 
 #loader {
+  position: fixed;
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,6 +34,13 @@ body {
   font-size: 3vmax;
   font-weight: bolder;
   color: #9b4b5f;
+  background-color: var(--secondary-col);
+  transition: 1s ease;
+  z-index: 9999;
+}
+
+.close-loading {
+  opacity: 0;
 }
 
 #loader-gif {

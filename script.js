@@ -12,3 +12,6 @@ document.querySelector('.over-container').addEventListener('scroll', function ()
     }
 });
 
+window.onload = () => {
+    document.getElementById('loader').style.display = 'none';
+}

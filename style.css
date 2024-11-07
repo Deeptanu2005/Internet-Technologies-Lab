@@ -23,6 +23,24 @@ body {
   transition: 0.4s ease;
 }
 
+#loader {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 3vmax;
+  font-weight: bolder;
+  color: #9b4b5f;
+}
+
+#loader-gif {
+  border-radius: 50%;
+  width: 22vmax;
+  border: 3px solid #9b4b5f;
+  box-shadow: 0 0 10px #9b4b5f;
+}
+
 .over-container {
   scroll-behavior: smooth;
   scroll-padding-top: 72px;

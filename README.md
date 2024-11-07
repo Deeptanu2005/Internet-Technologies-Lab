@@ -6,11 +6,11 @@ This repository contains my JavaScript Practical Assignment for the course **CMS
 - **Live Demo**: [Project Link](https://deeptanu2005.github.io/Internet-Technologies-Lab/)
 - **Repository**: [GitHub Repository](https://github.com/Deeptanu2005/Internet-Technologies-Lab)
 
-### Project Overview
+## Project Overview
 
 This assignment includes a set of JavaScript solutions covering a range of tasks from mathematical calculations to sorting and data operations. Each question is interactive, providing hands-on experience with JavaScript fundamentals, such as loops, conditionals, and functions.
 
-### Practical Questions
+## Practical Questions
 Below is a list of all questions covered in this project:
 
 ### Practical: 60 Lectures

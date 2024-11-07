@@ -20,5 +20,5 @@ window.onload = () => {
     }, 4000);
     setTimeout(() => {
         document.getElementById('loader').style.display = 'none';
-    }, 5000);
+    }, 4800);
 }

@@ -37,6 +37,7 @@ body {
   background-color: var(--secondary-col);
   transition: 1s ease;
   z-index: 9999;
+  overflow: hidden;
 }
 
 .close-loading {

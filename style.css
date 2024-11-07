@@ -78,7 +78,7 @@ body {
   box-shadow: 0 0 20px var(--border-glow-color);
 }
 
-.nav-list:hover>.vertical-line {
+.nav-list:hover > .vertical-line {
   border: 0.5px solid var(--primary-col);
 }
 

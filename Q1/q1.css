@@ -12,6 +12,17 @@ body {
     align-items: center;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vmax;
+    background-color: #2a2020;
+}
+
 button {
     font-size: xx-large;
     background-color: black;

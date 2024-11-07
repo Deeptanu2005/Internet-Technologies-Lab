@@ -18,5 +18,7 @@ window.onload = () => {
     setTimeout(() => {
         document.getElementById('loader').classList.add('close-loading');
     }, 4000);
-
+    setTimeout(() => {
+        document.getElementById('loader').style.display = 'none';
+    }, 5000);
 }

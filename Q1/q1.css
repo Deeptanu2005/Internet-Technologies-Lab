@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: xx-large;
+    background-color: black;
+    padding: 30px 40px;
+    border: 2px solid #ac7676;
+    box-shadow: 0 0 10px #ac7676;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4734db;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}

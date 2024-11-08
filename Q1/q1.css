@@ -19,14 +19,18 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 7vmax;
     background-color: #2a2020;
+    min-height: 7vmax;
+}
+
+nav h1 {
+    padding: 20px;
 }
 
 button {
-    font-size: xx-large;
+    font-size: 2vmax;
     background-color: black;
-    padding: 30px 40px;
+    padding: 2vmax 2.5vmax;
     border: 2px solid #ac7676;
     box-shadow: 0 0 10px #ac7676;
     border-radius: 15px;

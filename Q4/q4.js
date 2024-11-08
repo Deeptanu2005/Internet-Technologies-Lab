@@ -24,6 +24,7 @@ document.getElementById('addNum').addEventListener('click', () => {
             list.push(n);
             document.getElementById('list').value = 'List => ' + list.join(', ');
             document.getElementById('result').value = `${n} Added To List`;
+            document.getElementById('num').value = '';
         }
     }
 });

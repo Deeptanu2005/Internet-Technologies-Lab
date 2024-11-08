@@ -20,8 +20,12 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 7vmax;
     background-color: #2a2020;
+    min-height: 7vmax;
+}
+
+nav h1 {
+    padding: 20px;
 }
 
 body input,
@@ -29,11 +33,11 @@ body button {
     margin-bottom: 20px;
     padding: 10px;
     width: 50vmax;
-    height: 5vmax;
+    height: 65px;
     border: 2px solid white;
     background-color: transparent;
     border-radius: 20px;
-    font-size: x-large;
+    font-size: 2vmax;
     outline: none;
     transition: 0.4s ease;
 }

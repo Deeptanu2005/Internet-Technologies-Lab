@@ -1,3 +1,6 @@
+let nav = document.getElementsByTagName('nav')[0];
+document.body.style.marginTop = nav.clientHeight + 20;
+
 function factorial(n) {
     if (n === 0 || n === 1) {
         return 1;

@@ -1,3 +1,6 @@
+let nav = document.getElementsByTagName('nav')[0];
+document.body.style.marginTop = nav.clientHeight + 20;
+
 document.getElementById('result').value = 'Result';
 
 document.getElementById('getMax').addEventListener('click', () => {

@@ -13,6 +13,11 @@
   font-family: poppins, sans-serif;
 }
 
+*::selection {
+  background-color: var(--primary-col);
+  color: var(--secondary-col);
+}
+
 body {
   background-color: var(--secondary-col);
   height: 96.8vh;
@@ -177,6 +182,10 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: glowing-text 3.5s linear infinite;
+}
+
+.sec-heading::selection {
+  -webkit-text-fill-color: var(--secondary-col);
 }
 
 @keyframes glowing-text {

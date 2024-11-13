@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2020;
+    min-height: 7vmax;
+}
+
+nav h1 {
+    padding: 20px;
+}
+
+body input,
+body button {
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 65px;
+    width: 100%;
+    border: 2px solid white;
+    background-color: white;
+    color: #2a2020;
+    border-radius: 20px;
+    font-size: 2.5vw;
+    outline: none;
+    transition: 0.4s ease;
+}
+
+body input:focus {
+    box-shadow: 0 0 20px white;
+}
+
+body button {
+    background-color: #2a2020;
+    color: white;
+    border: transparent;
+    cursor: pointer;
+}
+
+body button:hover {
+    background-color: white;
+    box-shadow: 0 0 20px white;
+    color: #2a2020;
+}
+
+body button:active {
+    transform: scale(0.95);
+}
+
+#result {
+    box-shadow: 0 0 20px white;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.box {
+    background-color: #2a2020;
+    min-width: 70vw;
+    max-width: 90vw;
+    height: 70vh;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #000000b1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+#login,
+#signUp {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 35px 20px;
+    margin-top: auto;
+    transition: 0.5s ease;
+    background-image: linear-gradient(to right bottom, blue, red);
+}
+
+
+#signUp {
+    margin: 0 0 0 40px;
+}
+
+#login {
+    margin: 0 40px 0 0;
+}
+
+
+#login h3,
+#signUp h3 {
+    font-size: 2.5vw;
+}
+
+
+.input {
+    margin: auto 0;
+}
+
+#msg {
+    background-image: linear-gradient(to right bottom, #3cf9f9, #59f159);
+    font-size: 1.2vw;
+    text-align: center;
+    height: 20vh;
+    width: 70vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.313);
+
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vh;
+
+    z-index: 2;
+}
+#msg #message,
+#msg h3,
+#msg .cross {
+    color: #2a2020;
+    font-weight: bold;
+}
+
+#msg .cross {
+    cursor: pointer;
+    font-size: 2vw;
+    color: red;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
+
+#msg h3 {
+    font-size: 2.5vw;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}

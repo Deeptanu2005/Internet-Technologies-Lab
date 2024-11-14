@@ -43,7 +43,7 @@ body {
   color: #9b4b5f;
   background-color: var(--secondary-col);
   transition: 1s ease;
-  z-index: 9999;
+  z-index: 99999;
   overflow: hidden;
 }
 

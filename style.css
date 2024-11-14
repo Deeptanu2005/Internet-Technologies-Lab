@@ -63,6 +63,17 @@ body {
   box-shadow: 0 0 10px #9b4b5f;
 }
 
+#overlay {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.4s ease;
+  z-index: 9999;
+}
+
 .over-container {
   scroll-behavior: smooth;
   scroll-padding-top: 72px;
@@ -95,7 +106,7 @@ body {
   top: 32px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 999;
+  z-index: 9999;
 }
 
 .nav-list {
@@ -110,6 +121,7 @@ body {
   transition: 0.2s ease;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  z-index: 9999;
 }
 
 .nav-list:hover {

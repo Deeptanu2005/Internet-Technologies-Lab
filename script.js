@@ -12,7 +12,22 @@ document.querySelector('.over-container').addEventListener('scroll', function ()
     }
 });
 
+const overlay = document.getElementById('overlay');
+const navList = document.querySelector('.nav-list');
 
+overlay.style.visibility = 'hidden';
+overlay.style.opacity = '0';
+
+
+navList.addEventListener('mouseover', () => {
+    overlay.style.opacity = '1';
+    overlay.style.visibility = 'visible';
+});
+
+navList.addEventListener('mouseout', () => {
+    overlay.style.opacity = '0';
+    overlay.style.visibility = 'hidden';
+});
 
 window.onload = () => {
     setTimeout(() => {

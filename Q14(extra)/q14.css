@@ -98,8 +98,29 @@ body button:active {
     padding: 35px 20px;
     margin-top: auto;
     transition: 0.5s ease;
-    background-image: linear-gradient(to right bottom, blue, red);
+    background-image: linear-gradient(to right bottom, blue, red, blue);
+    background-size: 300% 300%;
 }
+
+.animate {
+    animation: diagonal-animation 4s ease-in-out infinite;
+}
+
+@keyframes diagonal-animation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
 
 
 #signUp {
@@ -143,6 +164,7 @@ body button:active {
 
     z-index: 2;
 }
+
 #msg #message,
 #msg h3,
 #msg .cross {
@@ -169,6 +191,6 @@ body button:active {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }

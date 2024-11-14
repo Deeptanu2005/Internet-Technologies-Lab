@@ -50,8 +50,8 @@ document.getElementById('loginBtn').addEventListener('click', () => {
         msgBox.style.display = 'flex';
         overlay.style.display = 'block';
         document.getElementById('message').innerText = 'Invalid credentials';
-        document.getElementById('userID').value = "";
-        document.getElementById('pass').value = "";
+        document.getElementById('loginUserID').value = "";
+        document.getElementById('loginPass').value = "";
     } else {
         msgBox.style.display = 'flex';
         overlay.style.display = 'block';
@@ -67,14 +67,25 @@ document.querySelector('.cross').addEventListener('click', () => {
 const signUp = document.getElementById('signUp');
 const login = document.getElementById('login');
 
-
-signUp.addEventListener('mousedown', () => {
+login.style.opacity = '0.2';
+login.style.filter = 'blur(3px)';
+signUp.classList.add('animate');
+signUp.addEventListener('click', () => {
     login.style.opacity = '0.2';
     signUp.style.opacity = '1';
+    login.style.filter = 'blur(3px)';
+    signUp.style.filter = 'blur(0)';
+    signUp.classList.add('animate');
+    login.classList.remove('animate');
+
 });
-login.addEventListener('mousedown', () => {
+login.addEventListener('click', () => {
     signUp.style.opacity = '0.2';
     login.style.opacity = '1';
+    signUp.style.filter = 'blur(3px)';
+    login.style.filter = 'blur(0)';
+    login.classList.add('animate');
+    signUp.classList.remove('animate');
 });
 
 

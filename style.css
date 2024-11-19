@@ -18,11 +18,15 @@
   color: var(--secondary-col);
 }
 
+html, body {
+  height: 100vh;
+}
+
 body {
   background-color: var(--secondary-col);
-  height: 96.8vh;
-  padding: 15px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   overflow: hidden;
   transition: 0.4s ease;
@@ -75,14 +79,29 @@ body {
 }
 
 .over-container {
+  height: 98.5%;
+  width: 98.5%;
   scroll-behavior: smooth;
   scroll-padding-top: 72px;
-  background-image: url(images/bg.jpg);
+  background-image: linear-gradient(to bottom right, red 8%, #0202bb, #000225, black, #000225, #610061, yellow);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   border-radius: 30px;
   overflow: scroll;
+  animation: bg-gradient 7s ease-in-out infinite;
+}
+
+@keyframes bg-gradient {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 150%;
+  }
+  100% {
+    background-size: 100%;
+  }
 }
 
 .heading h1 {
@@ -188,7 +207,6 @@ body {
   margin: 0 auto;
 
   background-image: linear-gradient(to right, rgba(0, 255, 0, 0.8), pink,rgba(0, 255, 255, 0.8),rgba(0, 255, 0, 0.8));
-  text-shadow: 0 0 30px rgba(255, 255, 255, 0.392);
   background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;
